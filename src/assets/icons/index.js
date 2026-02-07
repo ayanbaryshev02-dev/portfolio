@@ -6,3 +6,8 @@ export { default as ApiIcon } from './api.svg?react';
 export { default as FigmaIcon } from './figma.svg?react';
 export { default as ScssIcon } from './scss.svg?react';
 export { default as ResponsiveIcon } from './responsive.svg?react';
+export { default as GitHubIcon } from './gitHub.svg?react';
+export { default as LinkedinIcon } from './linkedIn.svg?react';
+export { default as TelegramIcon } from './telegram.svg?react';
+export { default as GmailIcon } from './gmail.svg?react';
+export { default as ProfileIMG } from './image.svg'

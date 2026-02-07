@@ -21,6 +21,16 @@ export const theme = createTheme({
     },
   },
 
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1240,  
+      xl: 1440,  
+    },
+  },
+
   typography: {
     fontFamily:
       '"Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
@@ -102,15 +112,31 @@ export const theme = createTheme({
       fontSize: '16px',
       fontWeight: 400,
     },
+  },
+  components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
 
-    components: {
-      MuiCard: {
-        styleOverrides: {
-          root: {
-            borderRadius: 12,
-            boxShadow: 'none',
-            border: '1px solid #E0E0E0',
+          paddingLeft: '100px !important',
+          paddingRight: '100px !important',
+
+          maxWidth: '1440px !important',
+        
+          '@media (max-width: 900px)': {
+            paddingLeft: '24px !important',
+            paddingRight: '24px !important',
           },
+        },
+      },
+    },
+    
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: 12,
+          boxShadow: 'none',
+          border: '1px solid #E0E0E0',
         },
       },
     },
