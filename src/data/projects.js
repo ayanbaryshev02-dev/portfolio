@@ -1,28 +1,34 @@
 export const projects = [
-    {id: 1, 
-    title: 'Todo List App', 
-    description:'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
-    tags:['vanilla CSS', 'HTML', 'JavaScript'],
+  {
+    id: 1,
+    title: 'Todo List App',
+    description:
+      'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
+    tags: ['vanilla CSS', 'HTML', 'JavaScript'],
     image: '',
     demoUrl: 'https://...',
     githubUrl: 'https://github.com/...',
-    },
+  },
 
-    {id: 2, 
-    title: 'Todo List App', 
-    description:'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
-    tags:['vanilla CSS', 'HTML', 'JavaScript'],
+  {
+    id: 2,
+    title: 'Todo List App',
+    description:
+      'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
+    tags: ['vanilla CSS', 'HTML', 'JavaScript'],
     image: '',
     demoUrl: 'https://...',
     githubUrl: 'https://github.com/...',
-    },
+  },
 
-    {id: 3, 
-    title: 'Todo List App', 
-    description:'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
-    tags:['vanilla CSS', 'HTML', 'JavaScript'],
+  {
+    id: 3,
+    title: 'Todo List App',
+    description:
+      'A simple and clean to-do application built with pure CSS and JavaScript. Focused on layout, responsiveness, and clear user interaction without frameworks or UI libraries.',
+    tags: ['vanilla CSS', 'HTML', 'JavaScript'],
     image: '',
     demoUrl: 'https://...',
     githubUrl: 'https://github.com/...',
-    },
-]
+  },
+];
