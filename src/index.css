@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Urbanist';
-  src: url('/src/fonts/urbanist-latin-400-normal.ttf') format('truetype');
+  src: url('../public/fonts/urbanist-latin-400-normal.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Urbanist';
-  src: url('/src/fonts/urbanist-latin-300-normal.ttf') format('truetype');
+  src: url('../public/fonts/urbanist-latin-300-normal.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Urbanist';
-  src: url('/src/fonts/urbanist-latin-100-normal.ttf') format('truetype');
+  src: url('../public/fonts/urbanist-latin-100-normal.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
