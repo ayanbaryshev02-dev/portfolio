@@ -8,6 +8,14 @@ export const COLORS = {
     accentLight: '#DCEEDC',
 }
 
+export const SECTION_IDS = {
+  ABOUT: 'about',
+  SKILLS: 'skills',
+  WORK: 'work',
+  EXPERIENCE: 'experience',
+  CONTACT: 'contact',
+};
+
 export const BREAKPOINTS = {
   mobile: '640px',
   tablet: '768px',
