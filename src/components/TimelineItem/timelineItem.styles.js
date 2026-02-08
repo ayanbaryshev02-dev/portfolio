@@ -26,14 +26,13 @@ export const timelineItemStyles = {
   year: {
     mb: 1,
     color: 'text.primary',
-    fontWeight: 600,
   },
   title: {
     mb: 1,
     color: 'primary.main',
   },
   description: {
-    color: 'text.secondary',
-    lineHeight: 1.7,
+    color: 'text.primary',
+    lineHeight: 1.3,
   },
 };
