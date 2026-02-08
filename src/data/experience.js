@@ -13,7 +13,7 @@ export const experience = [
     description:
       'Taking on small web development projects to apply learned skills in real-world scenarios. Focus on responsive design, clean code, and client communication.',
   },
-    {
+  {
     id: 3,
     year: '2019 - 2024',
     title: 'Media Specialist',

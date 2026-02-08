@@ -27,8 +27,12 @@ export const navbarStyles = {
   },
 
   logoPlaceholder: {
-    height: '60px',
-    marginBottom: '45px',
+    height: 'auto',
+    marginBottom: '32px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '12px',
   },
 
   nav: {
@@ -38,8 +42,6 @@ export const navbarStyles = {
   },
 
   link: {
-    fontSize: '16px',
-    fontWeight: 400,
     color: 'text.secondary',
     textDecoration: 'none',
     cursor: 'pointer',
@@ -63,8 +65,6 @@ export const navbarStyles = {
     textAlign: 'right',
 
     '& .MuiTypography-root': {
-      fontSize: '14px',
-      fontWeight: 400,
       color: 'text.secondary',
       lineHeight: 'normal',
     },

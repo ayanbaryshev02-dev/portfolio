@@ -19,6 +19,7 @@ export const theme = createTheme({
     bubble: {
       main: COLORS.bubbleColor,
     },
+    bubbleColor: '#43C970',
   },
 
   breakpoints: {
