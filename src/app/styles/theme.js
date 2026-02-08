@@ -26,8 +26,8 @@ export const theme = createTheme({
       xs: 0,
       sm: 600,
       md: 900,
-      lg: 1240,  
-      xl: 1440,  
+      lg: 1240,
+      xl: 1440,
     },
   },
 
@@ -117,12 +117,11 @@ export const theme = createTheme({
     MuiContainer: {
       styleOverrides: {
         root: {
-
           paddingLeft: '100px !important',
           paddingRight: '100px !important',
 
           maxWidth: '1440px !important',
-        
+
           '@media (max-width: 900px)': {
             paddingLeft: '24px !important',
             paddingRight: '24px !important',
@@ -130,7 +129,7 @@ export const theme = createTheme({
         },
       },
     },
-    
+
     MuiCard: {
       styleOverrides: {
         root: {

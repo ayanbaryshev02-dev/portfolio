@@ -1,4 +1,4 @@
-import { COLORS } from "../../utils/constants";
+import { COLORS } from '../../utils/constants';
 
 export const experienceStyles = {
   section: {

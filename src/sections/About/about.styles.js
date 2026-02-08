@@ -1,9 +1,9 @@
 export const aboutStyles = {
   section: {
-    py: 8,  
-    minHeight: '100vh',  
+    py: 8,
+    minHeight: '100vh',
     display: 'flex',
-    alignItems: 'center',  
+    alignItems: 'center',
   },
 
   wrapper: {
@@ -34,14 +34,14 @@ export const aboutStyles = {
 
   description: {
     mb: 4,
-    color: 'text.secondary', 
+    color: 'text.secondary',
     lineHeight: 1.8,
   },
 
   socialLinks: {
     display: 'flex',
-    gap: 2,  
-    mt: 4,   
+    gap: 2,
+    mt: 4,
   },
 
   socialIcon: {
@@ -57,7 +57,7 @@ export const aboutStyles = {
     color: 'text.primary',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
-    
+
     '&:hover': {
       backgroundColor: 'primary.main',
       borderColor: 'primary.main',

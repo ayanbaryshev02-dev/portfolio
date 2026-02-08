@@ -10,4 +10,4 @@ export { default as GitHubIcon } from './gitHub.svg?react';
 export { default as LinkedinIcon } from './linkedIn.svg?react';
 export { default as TelegramIcon } from './telegram.svg?react';
 export { default as GmailIcon } from './gmail.svg?react';
-export { default as ProfileIMG } from './image.svg'
+export { default as ProfileIMG } from './image.svg';

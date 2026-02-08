@@ -25,14 +25,21 @@ export const About = () => {
 
             <Typography variant="body1" sx={aboutStyles.description}>
               My current stack includes{' '}
-              <Box component="span" sx={{ color: 'primary.main', fontWeight: 400 }}>
+              <Box
+                component="span"
+                sx={{ color: 'primary.main', fontWeight: 400 }}
+              >
                 React, Redux Toolkit, Tailwind CSS, and SCSS
               </Box>
               . I actively work with{' '}
-              <Box component="span" sx={{ color: 'primary.main', fontWeight: 400 }}>
+              <Box
+                component="span"
+                sx={{ color: 'primary.main', fontWeight: 400 }}
+              >
                 REST APIs
-              </Box>
-              {' '}and continuously improve my skills by learning new tools and best practices.
+              </Box>{' '}
+              and continuously improve my skills by learning new tools and best
+              practices.
             </Typography>
 
             <Box sx={aboutStyles.socialLinks}>
