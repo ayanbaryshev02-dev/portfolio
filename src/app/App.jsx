@@ -4,19 +4,21 @@ import { theme } from './styles/theme';
 import { Skills } from '../sections/Skills/Skills';
 import { About } from '../sections/About/About';
 import { Experience } from '../sections/Experience/Experience';
-import { Navbar } from '../components/Navbar/Navbar'
+import { Navbar } from '../components/Navbar/Navbar';
+import { Work } from '../sections/Work/Work';
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-    <Box sx={{ marginRight: '235px' }}>
-        <About />
-        <Skills />
-        <Experience />
-      </Box>
-         <Navbar />
+        <Box sx={{ marginRight: '235px' }}>
+          <About />
+          <Skills />
+          <Work />
+          <Experience />
+        </Box>
+        <Navbar />
       </ThemeProvider>
     </>
   );

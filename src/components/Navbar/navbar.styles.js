@@ -12,7 +12,6 @@ export const navbarStyles = {
     borderColor: 'divider',
   },
 
-
   container: {
     position: 'fixed',
     right: '100px',
@@ -27,19 +26,16 @@ export const navbarStyles = {
     zIndex: 1000,
   },
 
-
   logoPlaceholder: {
     height: '60px',
     marginBottom: '45px',
   },
-
 
   nav: {
     display: 'flex',
     flexDirection: 'column',
     gap: '8px',
   },
-
 
   link: {
     fontSize: '16px',
@@ -56,25 +52,23 @@ export const navbarStyles = {
     },
   },
 
-
   activeLink: {
     color: 'primary.main',
   },
-
 
   footer: {
     marginTop: '300px',
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'right',
-    
+
     '& .MuiTypography-root': {
       fontSize: '14px',
       fontWeight: 400,
       color: 'text.secondary',
       lineHeight: 'normal',
     },
-    
+
     '& .MuiTypography-root:first-of-type': {
       marginBottom: '8px',
     },

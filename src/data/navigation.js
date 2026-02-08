@@ -8,5 +8,5 @@ export const navItems = [
 
 export const footerInfo = {
   name: 'Ayan Bayshev',
-  title: ['Software', 'Developer from', 'Kazakhstan'], 
+  title: ['Software', 'Developer from', 'Kazakhstan'],
 };

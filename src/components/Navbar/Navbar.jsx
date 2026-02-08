@@ -44,8 +44,7 @@ export const Navbar = () => {
       <Box sx={navbarStyles.linesContainer} />
       <Box sx={navbarStyles.container}>
         <Box>
-          <Box sx={navbarStyles.logoPlaceholder}>
-          </Box>
+          <Box sx={navbarStyles.logoPlaceholder}></Box>
 
           <Box sx={navbarStyles.nav}>
             {navItems.map((item) => (
@@ -62,7 +61,6 @@ export const Navbar = () => {
             ))}
           </Box>
         </Box>
-
 
         <Box sx={navbarStyles.footer}>
           <Typography>{footerInfo.name}</Typography>

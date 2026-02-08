@@ -11,3 +11,6 @@ export { default as LinkedinIcon } from './linkedIn.svg?react';
 export { default as TelegramIcon } from './telegram.svg?react';
 export { default as GmailIcon } from './gmail.svg?react';
 export { default as ProfileIMG } from './image.svg';
+export { default as iPhoneIcon1 } from './iPhone_1.svg?react';
+export { default as iPhoneIcon2 } from './iPhone_2.svg?react';
+export { default as MonitorIcon } from './monitor.svg?react';
