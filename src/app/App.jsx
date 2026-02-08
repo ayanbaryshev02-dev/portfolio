@@ -3,6 +3,7 @@ import { CssBaseline } from '@mui/material';
 import { theme } from './styles/theme';
 import { Skills } from '../sections/Skills/Skills';
 import { About } from '../sections/About/About';
+import { Experience } from '../sections/Experience/Experience';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <CssBaseline />
         <About />
         <Skills />
+        <Experience />
       </ThemeProvider>
     </>
   );
