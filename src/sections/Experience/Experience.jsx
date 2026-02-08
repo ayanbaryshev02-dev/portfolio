@@ -5,7 +5,7 @@ import { TimelineItem } from '../../components/TimelineItem/TimelineItem';
 
 export const Experience = () => {
   return (
-    <Box component="section" sx={experienceStyles.section}>
+    <Box component="section" id="experience" sx={experienceStyles.section}>
       <Container>
         <Typography variant="h1" sx={experienceStyles.heading}>
           experience
