@@ -37,13 +37,13 @@ export const navbarStyles = {
 
   bubbleWrapper: {
     position: 'absolute',
-    top: 0,
+    top: 15,
     left: '50%',
     transform: 'translateX(-50%)',
   },
 
   logo: {
-    marginTop: '52px', // Отступ сверху, чтобы лого было на постоянном месте
+    marginTop: '52px',
   },
 
   nav: {

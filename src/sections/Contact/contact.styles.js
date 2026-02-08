@@ -33,17 +33,13 @@ export const contactStyles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent',
-    borderRadius: 1,
-    border: '1px solid',
-    borderColor: 'divider',
-    color: 'text.primary',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
 
     '&:hover': {
-      backgroundColor: 'primary.main',
+      border: '1px solid',
       borderColor: 'primary.main',
-      transform: 'translateY(-3px)',
+      transform: 'translateY(-2px)',
     },
 
     '& svg': {

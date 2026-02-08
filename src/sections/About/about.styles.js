@@ -19,23 +19,25 @@ export const aboutStyles = {
   },
 
   image: {
-    width: '100%',
-    height: 'auto',
+    width: '400px',
+    height: '400px',
     display: 'block',
   },
 
   content: {
     flex: 1,
+    ml: 4,
   },
 
   mainText: {
     mb: 3,
+    pr: 10,
   },
 
   description: {
     mb: 4,
-    color: 'text.secondary',
-    lineHeight: 1.8,
+    lineHeight: 1.6,
+    pr: 4,
   },
 
   socialLinks: {
@@ -51,17 +53,15 @@ export const aboutStyles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent',
-    borderRadius: 1,
-    border: '1px solid',
-    borderColor: 'divider',
-    color: 'text.primary',
+
     textDecoration: 'none',
     transition: 'all 0.3s ease',
 
     '&:hover': {
-      backgroundColor: 'primary.main',
+      border: '1px solid',
+      color: 'text.primary',
       borderColor: 'primary.main',
-      transform: 'translateY(-3px)',
+      transform: 'translateY(-2px)',
       color: '#fff',
     },
 

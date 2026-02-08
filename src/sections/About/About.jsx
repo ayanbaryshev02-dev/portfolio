@@ -7,7 +7,6 @@ export const About = () => {
     <Box component="section" id="about" sx={aboutStyles.section}>
       <Container>
         <Box sx={aboutStyles.wrapper}>
-          {/* Image on the left */}
           <Box sx={aboutStyles.imageContainer}>
             <Box
               component="img"
@@ -17,7 +16,6 @@ export const About = () => {
             />
           </Box>
 
-          {/* Text and icons on the right */}
           <Box sx={aboutStyles.content}>
             <Typography variant="h3" sx={aboutStyles.mainText}>
               {aboutMe.mainText}

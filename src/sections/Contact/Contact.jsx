@@ -8,22 +8,20 @@ export const Contact = () => {
   const [showBubble, setShowBubble] = useState(false);
 
   useEffect(() => {
-    // Большой bubble появляется после исчезновения маленького
     const timer = setTimeout(() => {
       setShowBubble(true);
-    }, 400); // 300ms (fade out navbar) + 100ms задержка
+    }, 400);
 
     return () => clearTimeout(timer);
   }, []);
 
-  // При выходе из секции скрываем bubble
   useEffect(() => {
     const handleScroll = () => {
       const contactSection = document.getElementById('contact');
       if (contactSection) {
         const rect = contactSection.getBoundingClientRect();
         const isInView = rect.top < window.innerHeight && rect.bottom > 0;
-        
+
         if (!isInView && showBubble) {
           setShowBubble(false);
         } else if (isInView && !showBubble) {
@@ -42,12 +40,17 @@ export const Contact = () => {
         <Box sx={contactStyles.content}>
           <Fade in={showBubble} timeout={500}>
             <Box>
-              <SpeechBubble message="Let's Work Together !" isLarge />
+              <SpeechBubble
+                message="Let's Work Together !"
+                isLarge
+                show={showBubble}
+              />
             </Box>
           </Fade>
 
           <Typography variant="subtitle1" sx={contactStyles.description}>
-            I'm always interested in hearing about new projects and opportunities.
+            I'm always interested in hearing about new projects and
+            opportunities.
             <br />
             Feel free to reach out!
           </Typography>

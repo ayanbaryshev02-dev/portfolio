@@ -2,55 +2,60 @@ export const speechBubbleStyles = {
   container: {
     position: 'relative',
     backgroundColor: 'bubble.main',
-    borderRadius: '20px',
-    padding: '5px 12px',
+    borderRadius: '10px',
+    padding: '5px 13px',
     minWidth: '100px',
     boxShadow: '0 2px 12px rgba(74, 222, 128, 0.2)',
-    transition: 'opacity 0.3s ease, transform 0.3s ease',
+    transition:
+      'transform 0.4s cubic-bezier(0.34, 1.3, 0.64, 1), opacity 0.3s ease',
+    transformOrigin: 'bottom right',
+
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      bottom: '-4px',
+      right: '10px',
+      width: '10px',
+      height: '8px',
+      backgroundColor: 'bubble.main',
+      borderRadius: '0px 0px 0px 20px',
+      transform: 'skewX(8deg)',
+    },
   },
 
- text: {
+  text: {
     color: '#000000',
     textAlign: 'center',
     whiteSpace: 'nowrap',
   },
 
-  tail: {
-    position: 'absolute',
-    bottom: '-6px',
-    right: '16px',
-    width: 0,
-    height: 0,
-    borderLeft: '8px solid transparent',
-    borderRight: '8px solid transparent',
-    borderTop: (theme) => `8px solid ${theme.palette.bubble.main}`,
-  },
-
-
   largeContainer: {
     position: 'relative',
     backgroundColor: 'bubble.main',
-    borderRadius: '32px',
+    borderRadius: '20px',
     padding: '24px 48px',
     width: 'fit-content',
     boxShadow: '0 4px 24px rgba(74, 222, 128, 0.3)',
-    transition: 'opacity 0.5s ease, transform 0.5s ease',
+    transition:
+      'transform 0.4s cubic-bezier(0.34, 1.3, 0.64, 1), opacity 0.3s ease',
+    transformOrigin: 'bottom right',
+
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      bottom: '-10px',
+      right: '30px',
+      width: '30px',
+      height: '30px',
+      backgroundColor: 'bubble.main',
+      borderRadius: '0px 0px 0px 30px',
+      transform: 'skewX(8deg)',
+    },
   },
 
   largeText: {
     color: '#000000',
     textAlign: 'center',
     whiteSpace: 'nowrap',
-  },
-
-  largeTail: {
-    position: 'absolute',
-    bottom: '-16px',
-    right: '80px',
-    width: 0,
-    height: 0,
-    borderLeft: '20px solid transparent',
-    borderRight: '20px solid transparent',
-    borderTop: (theme) => `20px solid ${theme.palette.bubble.main}`,
   },
 };

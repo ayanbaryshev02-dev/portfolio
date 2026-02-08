@@ -53,7 +53,9 @@ export const Navbar = () => {
           <Box sx={navbarStyles.logoPlaceholder}>
             <Fade in={showBubble} timeout={300}>
               <Box sx={navbarStyles.bubbleWrapper}>
-                {showBubble && <SpeechBubble message={currentMessage} />}
+                {showBubble && (
+                  <SpeechBubble message={currentMessage} show={showBubble} />
+                )}
               </Box>
             </Fade>
             <Typography variant="logo" sx={navbarStyles.logo}>
