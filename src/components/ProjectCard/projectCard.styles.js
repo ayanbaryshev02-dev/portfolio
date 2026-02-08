@@ -68,8 +68,6 @@ export const projectCardStyles = {
   },
 
   tag: {
-    fontSize: '10px',
-    fontWeight: 400,
     height: 24,
     backgroundColor: 'primary.light',
     color: 'text.secondary',
@@ -92,8 +90,6 @@ export const projectCardStyles = {
     backgroundColor: 'primary.main',
     color: 'primary.light',
     textTransform: 'lowercase',
-    fontSize: '14px',
-    fontWeight: 400,
     borderRadius: 1,
     boxShadow: 'none',
 
@@ -109,7 +105,6 @@ export const projectCardStyles = {
     backgroundColor: 'text.primary',
     color: 'primary.light',
     textTransform: 'lowercase',
-    fontWeight: 400,
     borderRadius: 1,
     boxShadow: 'none',
 
