@@ -6,6 +6,7 @@ import { About } from '../sections/About/About';
 import { Experience } from '../sections/Experience/Experience';
 import { Navbar } from '../components/Navbar/Navbar';
 import { Work } from '../sections/Work/Work';
+import { Contact } from '../sections/Contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Skills />
           <Work />
           <Experience />
+          <Contact />
         </Box>
         <Navbar />
       </ThemeProvider>

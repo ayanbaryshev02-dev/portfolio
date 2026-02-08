@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { speechBubbleStyles } from './speechBubble.styles';
 import { useState, useEffect } from 'react';
 
-export const SpeechBubble = ({ message }) => {
+export const SpeechBubble = ({ message, isLarge = false }) => {
   const [displayMessage, setDisplayMessage] = useState(message);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -22,15 +22,18 @@ export const SpeechBubble = ({ message }) => {
   return (
     <Box
       sx={{
-        ...speechBubbleStyles.container,
+        ...(isLarge ? speechBubbleStyles.largeContainer : speechBubbleStyles.container),
         opacity: isAnimating ? 0 : 1,
         transform: isAnimating ? 'translateY(10px)' : 'translateY(0)',
       }}
     >
-      <Typography variant="bubble" sx={speechBubbleStyles.text}>
+      <Typography 
+        variant={isLarge ? 'h4' : 'bubble'} 
+        sx={isLarge ? speechBubbleStyles.largeText : speechBubbleStyles.text}
+      >
         {displayMessage}
       </Typography>
-      <Box sx={speechBubbleStyles.tail} />
+      <Box sx={isLarge ? speechBubbleStyles.largeTail : speechBubbleStyles.tail} />
     </Box>
   );
 };

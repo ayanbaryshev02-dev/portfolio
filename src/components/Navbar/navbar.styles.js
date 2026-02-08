@@ -27,12 +27,23 @@ export const navbarStyles = {
   },
 
   logoPlaceholder: {
-    height: 'auto',
     marginBottom: '32px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     gap: '12px',
+    position: 'relative',
+  },
+
+  bubbleWrapper: {
+    position: 'absolute',
+    top: 0,
+    left: '50%',
+    transform: 'translateX(-50%)',
+  },
+
+  logo: {
+    marginTop: '52px', // Отступ сверху, чтобы лого было на постоянном месте
   },
 
   nav: {

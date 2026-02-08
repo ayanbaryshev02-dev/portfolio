@@ -1,9 +1,10 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Fade } from '@mui/material';
 import { navItems, footerInfo } from '../../data/navigation';
 import { navbarStyles } from './navbar.styles';
 import { useState, useEffect } from 'react';
 import { SpeechBubble } from '../SpeechBubble/SpeechBubble';
 import { useSpeechBubble } from '../../hooks/useSpeechBubble';
+import { SECTION_IDS } from '../../utils/constants';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -42,14 +43,22 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScrollSpy);
   }, []);
 
+  const showBubble = activeSection !== SECTION_IDS.CONTACT;
+
   return (
     <>
       <Box sx={navbarStyles.linesContainer} />
       <Box sx={navbarStyles.container}>
         <Box>
           <Box sx={navbarStyles.logoPlaceholder}>
-            <SpeechBubble message={currentMessage} />
-            <Typography variant="logo">i'm Ayan.</Typography>
+            <Fade in={showBubble} timeout={300}>
+              <Box sx={navbarStyles.bubbleWrapper}>
+                {showBubble && <SpeechBubble message={currentMessage} />}
+              </Box>
+            </Fade>
+            <Typography variant="logo" sx={navbarStyles.logo}>
+              i'm Ayan.
+            </Typography>
           </Box>
 
           <Box sx={navbarStyles.nav}>
@@ -72,7 +81,9 @@ export const Navbar = () => {
         <Box sx={navbarStyles.footer}>
           <Typography variant="caption">{footerInfo.name}</Typography>
           {footerInfo.title.map((line, index) => (
-            <Typography key={index} variant="caption">{line}</Typography>
+            <Typography key={index} variant="caption">
+              {line}
+            </Typography>
           ))}
         </Box>
       </Box>
