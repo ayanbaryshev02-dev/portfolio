@@ -13,6 +13,7 @@ import { MobileLayout } from '../layouts/MobileLayout/MobileLayout';
 import { AboutMobile } from '../sections/About/AboutMobile';
 import { useSpeechBubble } from '../hooks/useSpeechBubble';
 import { SkillsMobile } from '../sections/Skills/SkillsMobile';
+import { WorkMobile } from '../sections/Work/WorkMobile';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
         return <AboutMobile />;
       case 'skills':
         return <SkillsMobile />; 
-      // ... другие секции
+      case 'work':
+        return <WorkMobile />;
       default:
         return <AboutMobile />;
     }

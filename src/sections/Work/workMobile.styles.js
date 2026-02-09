@@ -1,9 +1,10 @@
-export const skillsMobileStyles = {
+export const workMobileStyles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    paddingX: '32px',
+    paddingX: 0, 
+    alignItems: 'center', 
     marginTop: '110px',
   },
 
@@ -12,6 +13,8 @@ export const skillsMobileStyles = {
     fontWeight: 100,
     color: 'textLines',
     marginBottom: '16px',
+    alignSelf: 'flex-start', 
+    paddingLeft: '32px',
 
     '@media (max-height: 700px)': {
       fontSize: '30px',
@@ -24,18 +27,11 @@ export const skillsMobileStyles = {
     },
   },
 
-  grid: {
-    display: 'grid', 
-    gridTemplateColumns: 'repeat(4, 78px)', 
-    columnGap: '8px', 
-    rowGap: '16px',    
-    justifyContent: 'flex-start',
-  },
-
-  gridItem: {
-    width: '78px',
-    height: '72px',
-    marginRight: '10px', 
-    marginBottom: '32px', 
+  list: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+    width: '100%',
+    alignItems: 'center',
   },
 };

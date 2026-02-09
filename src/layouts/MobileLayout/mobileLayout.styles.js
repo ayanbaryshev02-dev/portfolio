@@ -78,8 +78,9 @@ export const mobileLayoutStyles = {
 
   content: {
     position: 'fixed',
-    top: '50%',
-    width: '100%',
+    top: '180px',
+    bottom: '180px',
+    width: 'calc(100% - 64px)',
     height: '100%',
     display: 'flex',
     top: 62,
