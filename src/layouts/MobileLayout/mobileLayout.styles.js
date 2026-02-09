@@ -5,17 +5,21 @@ export const mobileLayoutStyles = {
     height: '100vh',
     overflow: 'hidden',
     backgroundColor: 'background.default',
+        marginTop: '32px', 
+    paddingTop: '32px', 
   },
 
-  // Верхний левый - Имя и должность
+
   topLeft: {
     position: 'fixed',
-    top: 16,
-    left: 32, // ← маржин 32px
+    top: 62,
+    left: 32,
     display: 'flex',
     flexDirection: 'column',
     gap: 0.5,
     zIndex: 100,
+     justifyContent: 'flex-end', 
+  height: '80px',
 
     '& .MuiTypography-root': {
       fontSize: '12px',
@@ -25,47 +29,51 @@ export const mobileLayoutStyles = {
     },
   },
 
-  // Верхний правый - Logo + Bubble
+
   topRight: {
     position: 'fixed',
-    top: 16,
-    right: 32, // ← маржин 32px
+    top: 62,
+    right: 32, 
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
-    gap: '32px', // ← расстояние между bubble и лого 32px
+    gap: '6px',
     zIndex: 100,
+      justifyContent: 'flex-end', 
+  height: '80px', 
   },
 
   logo: {
     fontSize: '32px',
     fontWeight: 400,
     color: 'text.primary',
+    lineHeight: 1,
   },
 
-  // Контент по центру
+
   content: {
     width: '100%',
     height: '100%',
     display: 'flex',
+    top: 62,
     alignItems: 'flex-start',
     justifyContent: 'center',
   },
 
-  // Нижний левый - Соцсети
+
   bottomLeft: {
     position: 'fixed',
-    bottom: '150px', // ← маржин снизу 150px
-    left: 32, // ← маржин 32px
+    bottom: '150px', 
+    left: 32, 
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px', // ← расстояние между иконками 16px
+    gap: '16px', 
     zIndex: 100,
   },
 
   socialIcon: {
-    width: 36,
-    height: 36,
+    width: 15,
+    height: 15,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
