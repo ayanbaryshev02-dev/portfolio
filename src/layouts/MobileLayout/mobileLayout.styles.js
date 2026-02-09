@@ -1,6 +1,6 @@
 export const mobileLayoutStyles = {
   container: {
-    position: 'relative',
+    position: 'fixed',
     width: '100vw',
     height: '100vh',
     overflow: 'hidden',
@@ -52,6 +52,8 @@ export const mobileLayoutStyles = {
 
 
   content: {
+     position: 'fixed',
+       top: '50%',
     width: '100%',
     height: '100%',
     display: 'flex',
