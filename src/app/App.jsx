@@ -12,6 +12,8 @@ import { useState } from 'react';
 import { MobileLayout } from '../layouts/MobileLayout/MobileLayout';
 import { AboutMobile } from '../sections/About/AboutMobile';
 import { useSpeechBubble } from '../hooks/useSpeechBubble';
+import { SkillsMobile } from '../sections/Skills/SkillsMobile';
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,8 +33,8 @@ function App() {
     switch (currentSection) {
       case 'about':
         return <AboutMobile />;
-      // case 'skills':
-      //   return <SkillsMobile />;
+      case 'skills':
+        return <SkillsMobile />; 
       // ... другие секции
       default:
         return <AboutMobile />;
