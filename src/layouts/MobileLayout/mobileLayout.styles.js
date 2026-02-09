@@ -101,7 +101,7 @@ export const mobileLayoutStyles = {
 
   bottomLeft: {
     position: 'fixed',
-    bottom: '150px', 
+    bottom: '110px', 
     left: 32, 
     display: 'flex',
     flexDirection: 'column',
@@ -109,12 +109,12 @@ export const mobileLayoutStyles = {
     zIndex: 100,
 
      '@media (max-height: 700px)': {
-      bottom: '100px', 
+      bottom: '60px', 
       gap: '12px',
     },
 
     '@media (max-height: 600px)': {
-      bottom: '80px',
+      bottom: '30px',
       gap: '10px',
     },
   },
@@ -142,16 +142,16 @@ export const mobileLayoutStyles = {
 
   bottomRight: {
     position: 'fixed',
-    bottom: '150px', 
+    bottom: '110px', 
     right: 32, 
     zIndex: 100,
 
      '@media (max-height: 700px)': {
-      bottom: '100px',
+      bottom: '60px',
     },
 
     '@media (max-height: 600px)': {
-      bottom: '80px',
+      bottom: '30px',
     },
   },
 };

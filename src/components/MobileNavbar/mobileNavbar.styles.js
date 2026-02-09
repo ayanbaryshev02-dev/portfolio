@@ -4,6 +4,9 @@ export const mobileNavbarStyles = {
     flexDirection: 'column',
     gap: '8px', 
     alignItems: 'flex-end',
+    marginTop: '20px',  
+    paddingTop: '10px', 
+    
 
     '@media (max-height: 700px)': {
       gap: '6px',
