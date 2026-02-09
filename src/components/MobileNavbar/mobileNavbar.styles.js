@@ -4,6 +4,14 @@ export const mobileNavbarStyles = {
     flexDirection: 'column',
     gap: '8px', 
     alignItems: 'flex-end',
+
+    '@media (max-height: 700px)': {
+      gap: '6px',
+    },
+
+    '@media (max-height: 600px)': {
+      gap: '4px',
+    },
   },
 
   link: {
@@ -14,6 +22,15 @@ export const mobileNavbarStyles = {
     textAlign: 'right',
     lineHeight: 'normal',
     transition: 'color 0.3s ease',
+
+    '@media (max-height: 700px)': {
+      fontSize: '14px',
+    },
+
+    '@media (max-height: 600px)': {
+      fontSize: '13px',
+    },
+
 
     '&:hover': {
       color: 'text.primary',

@@ -5,7 +5,7 @@ export const mobileLayoutStyles = {
     height: '100vh',
     overflow: 'hidden',
     backgroundColor: 'background.default',
-        marginTop: '32px', 
+    marginTop: '32px', 
     paddingTop: '32px', 
   },
 
@@ -21,11 +21,25 @@ export const mobileLayoutStyles = {
      justifyContent: 'flex-end', 
   height: '80px',
 
+   '@media (max-height: 700px)': {
+      top: 62, 
+      height: '60px',
+    },
+
+    '@media (max-height: 600px)': {
+      top: 32,
+      height: '60px',
+    },
+
     '& .MuiTypography-root': {
       fontSize: '12px',
       fontWeight: 300,
       color: 'text.secondary',
       lineHeight: 'normal',
+
+      '@media (max-height: 600px)': {
+        fontSize: '10px', 
+      },
     },
   },
 
@@ -41,6 +55,17 @@ export const mobileLayoutStyles = {
     zIndex: 100,
       justifyContent: 'flex-end', 
   height: '80px', 
+
+   '@media (max-height: 700px)': {
+      top: 62,
+      height: '60px',
+      gap: '4px',
+    },
+
+    '@media (max-height: 600px)': {
+      top: 32,
+      height: '60px',
+    },
   },
 
   logo: {
@@ -52,14 +77,24 @@ export const mobileLayoutStyles = {
 
 
   content: {
-     position: 'fixed',
-       top: '50%',
+    position: 'fixed',
+    top: '50%',
     width: '100%',
     height: '100%',
     display: 'flex',
     top: 62,
     alignItems: 'flex-start',
     justifyContent: 'center',
+
+    '@media (max-height: 700px)': {
+      padding: '0 0px',
+     top: 44,
+    },
+
+    '@media (max-height: 600px)': {
+      padding: '0 0px',
+      top: 32,
+    },
   },
 
 
@@ -71,6 +106,16 @@ export const mobileLayoutStyles = {
     flexDirection: 'column',
     gap: '16px', 
     zIndex: 100,
+
+     '@media (max-height: 700px)': {
+      bottom: '100px', 
+      gap: '12px',
+    },
+
+    '@media (max-height: 600px)': {
+      bottom: '80px',
+      gap: '10px',
+    },
   },
 
   socialIcon: {
@@ -99,5 +144,13 @@ export const mobileLayoutStyles = {
     bottom: '150px', 
     right: 32, 
     zIndex: 100,
+
+     '@media (max-height: 700px)': {
+      bottom: '100px',
+    },
+
+    '@media (max-height: 600px)': {
+      bottom: '80px',
+    },
   },
 };

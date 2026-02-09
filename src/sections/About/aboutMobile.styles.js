@@ -12,20 +12,49 @@ export const aboutMobileStyles = {
     fontWeight: 100,
     color: 'textLines',
     marginBottom: '16px', 
+
+    '@media (max-height: 700px)': {
+      fontSize: '30px',
+      marginBottom: '12px',
+    },
+
+    '@media (max-height: 600px)': {
+      fontSize: '30px',
+      marginBottom: '10px',
+    },
   },
 
   mainText: {
-    fontSize: '16px',
+    fontSize: '24px',
     fontWeight: 300,
     lineHeight: 1.4,
     marginBottom: 2,
     color: 'text.primary',
+
+     '@media (max-height: 700px)': {
+      fontSize: '20px',
+      marginBottom: 1.5,
+    },
+
+    '@media (max-height: 600px)': {
+      fontSize: '20px',
+      marginBottom: 1,
+    },
   },
 
   description: {
-    fontSize: '12px',
+    fontSize: '14px',
     fontWeight: 300,
     lineHeight: 1.4,
-    color: 'text.secondary',
+    color: 'text.primary',
+
+    '@media (max-height: 700px)': {
+      fontSize: '14px',
+    },
+
+    '@media (max-height: 600px)': {
+      fontSize: '12px',
+      lineHeight: 1.3,
+    },
   },
 };
