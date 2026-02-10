@@ -11,6 +11,7 @@ export const MobileLayout = ({
   currentMessage,
   onNavigate,
 }) => {
+  const showNavbarBubble = currentSection !== 'contact';
   return (
     <Box sx={mobileLayoutStyles.container}>
       <Box sx={mobileLayoutStyles.topLeft}>
@@ -21,7 +22,9 @@ export const MobileLayout = ({
       </Box>
 
       <Box sx={mobileLayoutStyles.topRight}>
-        <SpeechBubble message={currentMessage} show={true} />
+        {showNavbarBubble && (
+          <SpeechBubble message={currentMessage} show={showNavbarBubble} />
+        )}
         <Typography variant="logo" sx={mobileLayoutStyles.logo}>
           i'm Ayan.
         </Typography>

@@ -15,6 +15,7 @@ import { useSpeechBubble } from '../hooks/useSpeechBubble';
 import { SkillsMobile } from '../sections/Skills/SkillsMobile';
 import { WorkMobile } from '../sections/Work/WorkMobile';
 import { ExperienceMobile } from '../sections/Experience/ExperienceMobile';
+import { ContactMobile } from '../sections/Contact/ContactMobile';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,8 @@ function App() {
         return <WorkMobile />;
       case 'experience':
         return <ExperienceMobile />;
+      case 'contact':
+        return <ContactMobile />;
       default:
         return <AboutMobile />;
     }
