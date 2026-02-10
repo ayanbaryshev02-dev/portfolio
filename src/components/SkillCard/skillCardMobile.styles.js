@@ -21,6 +21,11 @@ export const skillCardMobileStyles = {
       borderColor: 'primary.main',
       boxShadow: 'none',
     },
+
+     '@media (max-height: 700px)': {
+      height: '90px',
+    width: '70px',
+    },
   },
 
   iconContainer: {

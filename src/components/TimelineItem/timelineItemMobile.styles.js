@@ -45,6 +45,10 @@ export const timelineItemMobileStyles = {
     fontWeight: 400,
     color: 'primary.main',
     lineHeight: 1.2,
+
+        '@media (max-height: 840px)': {
+      fontSize: '12px',
+    },
   },
 
   description: {
@@ -52,6 +56,12 @@ export const timelineItemMobileStyles = {
     fontWeight: 300,
     color: 'text.primary',
     lineHeight: 1.4,
-    width: '305px',
+    paddingRight: '0px',
+    width: '100%',
+
+     '@media (max-height: 840px)': {
+      fontSize: '11px',
+      width: '100%',
+    },
   },
 };

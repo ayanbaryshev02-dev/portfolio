@@ -3,8 +3,10 @@ export const experienceMobileStyles = {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    paddingX: '32px',
+     paddingLeft: '32px',
+    paddingRight: '0px',
     marginTop: '110px',
+
   },
 
   header: {
@@ -18,6 +20,7 @@ export const experienceMobileStyles = {
       marginBottom: '12px',
       marginTop: '-20px',
     },
+    
 
     '@media (max-height: 600px)': {
       fontSize: '20px',

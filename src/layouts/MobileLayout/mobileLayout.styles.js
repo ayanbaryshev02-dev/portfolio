@@ -88,7 +88,10 @@ export const mobileLayoutStyles = {
       padding: '0 0px',
       top: 28,
     },
-
+        '@media (max-height: 650px)': {
+      padding: '0 0px',
+      top: 12,
+    },
     '@media (max-height: 600px)': {
       padding: '0 0px',
       top: 32,
@@ -104,11 +107,34 @@ export const mobileLayoutStyles = {
     gap: '18px',
     zIndex: 100,
 
+          '@media (max-height: 790px)': {
+      bottom: '50px',
+    },
+       '@media (max-height: 745px)': {
+      bottom: '40px',
+    },
+        '@media (max-height: 735px)': {
+      bottom: '35px',
+    },
+          '@media (max-height: 715px)': {
+      bottom: '25px',
+    },
+
     '@media (max-height: 700px)': {
       bottom: '50px',
       gap: '12px',
     },
 
+              '@media (max-height: 670px)': {
+      bottom: '25px',
+    },
+    
+                  '@media (max-height: 645px)': {
+      bottom: '15px',
+    },
+                      '@media (max-height: 625px)': {
+      bottom: '10px',
+    },
     '@media (max-height: 600px)': {
       bottom: '30px',
       gap: '10px',
@@ -141,10 +167,36 @@ export const mobileLayoutStyles = {
     right: 32,
     zIndex: 100,
 
+      '@media (max-height: 790px)': {
+      bottom: '50px',
+    },
+       '@media (max-height: 745px)': {
+      bottom: '40px',
+    },
+        '@media (max-height: 735px)': {
+      bottom: '35px',
+    },
+          '@media (max-height: 725px)': {
+      bottom: '25px',
+    },
+              '@media (max-height: 715px)': {
+      bottom: '15px',
+    },
     '@media (max-height: 700px)': {
       bottom: '50px',
     },
 
+    
+              '@media (max-height: 670px)': {
+      bottom: '25px',
+    },
+    
+                  '@media (max-height: 645px)': {
+      bottom: '15px',
+    },
+                      '@media (max-height: 625px)': {
+      bottom: '10px',
+    },
     '@media (max-height: 600px)': {
       bottom: '30px',
     },

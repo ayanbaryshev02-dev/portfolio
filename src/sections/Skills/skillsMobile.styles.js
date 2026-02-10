@@ -14,12 +14,16 @@ export const skillsMobileStyles = {
     marginBottom: '16px',
 
     '@media (max-height: 700px)': {
-      fontSize: '30px',
+      fontSize: '20px',
       marginBottom: '12px',
     },
-
+    '@media (max-height: 620px)': {
+      fontSize: '20px',
+      marginBottom: '5px',
+      marginTop: '-30px',
+    },
     '@media (max-height: 600px)': {
-      fontSize: '30px',
+      fontSize: '20px',
       marginBottom: '10px',
     },
   },
@@ -30,6 +34,16 @@ export const skillsMobileStyles = {
     columnGap: '8px',
     rowGap: '16px',
     justifyContent: 'flex-start',
+
+    '@media (max-height: 700px)': {
+      columnGap: '6px',
+      rowGap: '12px',
+    },
+
+    '@media (max-height: 600px)': {
+      columnGap: '4px',
+      rowGap: '8px',
+    },
   },
 
   gridItem: {
@@ -37,5 +51,15 @@ export const skillsMobileStyles = {
     height: '72px',
     marginRight: '10px',
     marginBottom: '32px',
+
+    '@media (max-height: 700px)': {
+      marginRight: '8px',
+      marginBottom: '24px',
+    },
+
+    '@media (max-height: 600px)': {
+      marginRight: '6px',
+      marginBottom: '16px',
+    },
   },
 };
