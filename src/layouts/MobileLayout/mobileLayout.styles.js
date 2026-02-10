@@ -28,6 +28,7 @@ export const mobileLayoutStyles = {
     '@media (max-height: 600px)': {
       top: 32,
       height: '60px',
+      fontSize: '10px',
     },
 
     '& .MuiTypography-root': {
@@ -35,11 +36,13 @@ export const mobileLayoutStyles = {
       fontWeight: 300,
       color: 'text.secondary',
       lineHeight: 'normal',
-
-      '@media (max-height: 600px)': {
-        fontSize: '10px',
-      },
     },
+    '& .MuiTypography-root:first-of-type': {
+    marginBottom: '8px', 
+  },
+     '& .MuiTypography-root:nth-child(n+2)': {
+    lineHeight: 1.0, 
+  },
   },
 
   topRight: {
@@ -88,7 +91,7 @@ export const mobileLayoutStyles = {
       padding: '0 0px',
       top: 28,
     },
-        '@media (max-height: 650px)': {
+    '@media (max-height: 650px)': {
       padding: '0 0px',
       top: 12,
     },
@@ -107,16 +110,16 @@ export const mobileLayoutStyles = {
     gap: '18px',
     zIndex: 100,
 
-          '@media (max-height: 790px)': {
+    '@media (max-height: 790px)': {
       bottom: '50px',
     },
-       '@media (max-height: 745px)': {
+    '@media (max-height: 745px)': {
       bottom: '40px',
     },
-        '@media (max-height: 735px)': {
+    '@media (max-height: 735px)': {
       bottom: '35px',
     },
-          '@media (max-height: 715px)': {
+    '@media (max-height: 715px)': {
       bottom: '25px',
     },
 
@@ -125,14 +128,14 @@ export const mobileLayoutStyles = {
       gap: '12px',
     },
 
-              '@media (max-height: 670px)': {
+    '@media (max-height: 670px)': {
       bottom: '25px',
     },
-    
-                  '@media (max-height: 645px)': {
+
+    '@media (max-height: 645px)': {
       bottom: '15px',
     },
-                      '@media (max-height: 625px)': {
+    '@media (max-height: 625px)': {
       bottom: '10px',
     },
     '@media (max-height: 600px)': {
@@ -167,34 +170,33 @@ export const mobileLayoutStyles = {
     right: 32,
     zIndex: 100,
 
-      '@media (max-height: 790px)': {
+    '@media (max-height: 790px)': {
       bottom: '50px',
     },
-       '@media (max-height: 745px)': {
+    '@media (max-height: 745px)': {
       bottom: '40px',
     },
-        '@media (max-height: 735px)': {
+    '@media (max-height: 735px)': {
       bottom: '35px',
     },
-          '@media (max-height: 725px)': {
+    '@media (max-height: 725px)': {
       bottom: '25px',
     },
-              '@media (max-height: 715px)': {
+    '@media (max-height: 715px)': {
       bottom: '15px',
     },
     '@media (max-height: 700px)': {
       bottom: '50px',
     },
 
-    
-              '@media (max-height: 670px)': {
+    '@media (max-height: 670px)': {
       bottom: '25px',
     },
-    
-                  '@media (max-height: 645px)': {
+
+    '@media (max-height: 645px)': {
       bottom: '15px',
     },
-                      '@media (max-height: 625px)': {
+    '@media (max-height: 625px)': {
       bottom: '10px',
     },
     '@media (max-height: 600px)': {

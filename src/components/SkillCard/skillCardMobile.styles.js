@@ -22,9 +22,9 @@ export const skillCardMobileStyles = {
       boxShadow: 'none',
     },
 
-     '@media (max-height: 700px)': {
+    '@media (max-height: 700px)': {
       height: '90px',
-    width: '70px',
+      width: '70px',
     },
   },
 

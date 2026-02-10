@@ -24,6 +24,9 @@ export const timelineItemMobileStyles = {
     width: '1px',
     backgroundColor: 'primary.main',
     height: '220px',
+    '@media (max-height: 630px)': {
+      height: '190px',
+    },
   },
 
   content: {
@@ -38,6 +41,10 @@ export const timelineItemMobileStyles = {
     fontWeight: 400,
     color: 'text.secondary',
     lineHeight: 1.2,
+
+    '@media (max-height: 630px)': {
+      fontSize: '8px',
+    },
   },
 
   title: {
@@ -46,7 +53,10 @@ export const timelineItemMobileStyles = {
     color: 'primary.main',
     lineHeight: 1.2,
 
-        '@media (max-height: 840px)': {
+    '@media (max-height: 840px)': {
+      fontSize: '12px',
+    },
+     '@media (max-height: 630px)': {
       fontSize: '12px',
     },
   },
@@ -59,9 +69,12 @@ export const timelineItemMobileStyles = {
     paddingRight: '0px',
     width: '100%',
 
-     '@media (max-height: 840px)': {
+    '@media (max-height: 840px)': {
       fontSize: '11px',
       width: '100%',
+    },
+    '@media (max-height: 630px)': {
+      fontSize: '10px',
     },
   },
 };

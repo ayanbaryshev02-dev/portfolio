@@ -17,8 +17,12 @@ export const About = () => {
           </Box>
 
           <Box sx={aboutStyles.content}>
-            <Typography variant="h3" sx={aboutStyles.mainText}>
-              {aboutMe.mainText}
+            <Typography variant="body2" sx={aboutStyles.mainText}>
+              I'm a{' '}
+              <Box component="span" sx={{ color: 'primary.main' }}>
+                frontend developer
+              </Box>{' '}
+              focused on clean, responsive, and user-friendly interfaces.
             </Typography>
 
             <Typography variant="body1" sx={aboutStyles.description}>
