@@ -9,8 +9,21 @@ export const aboutStyles = {
   wrapper: {
     display: 'flex',
     alignItems: 'center',
-    gap: '125px',
     flexDirection: { xs: 'column', md: 'row' },
+    gap: '125px',
+
+    '@media (max-width: 1270px)': {
+      gap: '80px',
+    },
+    '@media (max-width: 1100px)': {
+      gap: '0px',
+    },
+    '@media (max-width: 1000px)': {
+      gap: '0px',
+    },
+    '@media (max-width: 900px)': {
+      gap: '0px',
+    },
   },
 
   imageContainer: {
@@ -19,25 +32,49 @@ export const aboutStyles = {
   },
 
   image: {
-    width: '400px',
-    height: '400px',
+    width: '100%',
+    maxWidth: '400px',
+    height: 'auto',
     display: 'block',
+
+    '@media (max-width: 1270px)': {
+      maxWidth: '350px',
+    },
+    '@media (max-width: 1100px)': {
+      maxWidth: '250px',
+    },
   },
 
   content: {
     flex: 1,
-    ml: 4,
+    ml: { xs: 0, md: 0 },
   },
 
   mainText: {
     mb: 3,
-    pr: 10,
+    pr: { xs: 0, md: 4, lg: 10 },
+    fontSize: { xs: '28px', sm: '32px', md: '36px' },
+
+    '@media (max-width: 1270px)': {
+      fontSize: '28px',
+    },
+    '@media (max-width: 1100px)': {
+      fontSize: '24px',
+    },
   },
 
   description: {
     mb: 4,
     lineHeight: 1.6,
-    pr: 4,
+    pr: { xs: 0, md: 2, lg: 4 },
+    fontSize: { xs: '16px', sm: '18px', md: '20px' },
+
+    '@media (max-width: 1270px)': {
+      fontSize: '16px',
+    },
+    '@media (max-width: 1100px)': {
+      fontSize: '14px',
+    },
   },
 
   socialLinks: {
