@@ -1,7 +1,7 @@
 export const projectCardMobileStyles = {
   card: {
     position: 'relative',
-    height: '90px',
+    height: '110px',
     width: 'auto',
     display: 'flex',
     left: 30,
@@ -51,7 +51,7 @@ export const projectCardMobileStyles = {
   },
 
   description: {
-    fontSize: '10px',
+    fontSize: '12px',
     fontWeight: 300,
     lineHeight: 1.3,
     color: 'text.primary',
@@ -64,19 +64,19 @@ export const projectCardMobileStyles = {
   buttonsSection: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
+    gap: '10px',
     paddingRight: '13px',
   },
 
   demoButton: {
-    width: '60px',
+    width: '65px',
     height: '30px',
     minWidth: '60px',
     minHeight: '30px',
     backgroundColor: 'primary.main',
     color: 'primary.light',
     textTransform: 'lowercase',
-    fontSize: '10px',
+    fontSize: '12px',
     fontWeight: 400,
     borderRadius: 0.5,
     boxShadow: 'none',
@@ -90,14 +90,14 @@ export const projectCardMobileStyles = {
   },
 
   githubButton: {
-    width: '60px',
+    width: '65px',
     height: '30px',
     minWidth: '60px',
     minHeight: '30px',
     backgroundColor: 'text.primary',
     color: 'primary.light',
     textTransform: 'lowercase',
-    fontSize: '10px',
+    fontSize: '12px',
     fontWeight: 400,
     borderRadius: 0.5,
     boxShadow: 'none',

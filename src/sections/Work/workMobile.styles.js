@@ -17,13 +17,14 @@ export const workMobileStyles = {
     paddingLeft: '32px',
 
     '@media (max-height: 700px)': {
-      fontSize: '30px',
-      marginBottom: '12px',
+      fontSize: '20px',
+      marginBottom: '8px',
+      marginTop: '-20px',
     },
 
     '@media (max-height: 600px)': {
-      fontSize: '30px',
-      marginBottom: '10px',
+      fontSize: '20px',
+      marginBottom: '8px',
     },
   },
 

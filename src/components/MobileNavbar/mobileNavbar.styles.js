@@ -17,7 +17,7 @@ export const mobileNavbarStyles = {
   },
 
   link: {
-    fontSize: '16px',
+    fontSize: '17px',
     fontWeight: 400,
     color: 'text.secondary',
     cursor: 'pointer',

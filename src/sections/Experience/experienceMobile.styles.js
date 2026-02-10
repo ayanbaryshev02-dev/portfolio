@@ -14,13 +14,15 @@ export const experienceMobileStyles = {
     marginBottom: '16px',
 
     '@media (max-height: 700px)': {
-      fontSize: '30px',
+      fontSize: '20px',
       marginBottom: '12px',
+      marginTop: '-20px',
     },
 
     '@media (max-height: 600px)': {
-      fontSize: '30px',
+      fontSize: '20px',
       marginBottom: '10px',
+      marginTop: '-30px',
     },
   },
 
