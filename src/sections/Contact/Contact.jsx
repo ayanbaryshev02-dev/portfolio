@@ -3,6 +3,7 @@ import { contactStyles } from './contact.styles';
 import { aboutMe } from '../../data/aboutMe';
 import { SpeechBubble } from '../../components/SpeechBubble/SpeechBubble';
 import { useState, useEffect } from 'react';
+import { DecorativeLines } from '../../components/DecorativeLines/DecorativeLines';
 
 export const Contact = () => {
   const [showBubble, setShowBubble] = useState(false);
@@ -36,6 +37,7 @@ export const Contact = () => {
 
   return (
     <Box component="section" id="contact" sx={contactStyles.section}>
+      <DecorativeLines showDivider />
       <Container>
         <Box sx={contactStyles.content}>
           <Fade in={showBubble} timeout={500}>

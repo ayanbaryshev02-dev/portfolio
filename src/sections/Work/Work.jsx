@@ -3,10 +3,12 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 import { ProjectCard } from '../../components/ProjectCard/ProjectCard';
 import { projects } from '../../data/projects';
 import { workStyles } from './work.styles';
+import { DecorativeLines } from '../../components/DecorativeLines/DecorativeLines';
 
 export const Work = () => {
   return (
     <Box component="section" id="work" sx={workStyles.section}>
+      <DecorativeLines showDivider />
       <Container>
         <Typography variant="h1" sx={workStyles.title}>
           work

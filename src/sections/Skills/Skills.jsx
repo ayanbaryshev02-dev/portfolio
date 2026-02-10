@@ -2,10 +2,12 @@ import React from 'react';
 import { Container, Grid, Typography, Box } from '@mui/material';
 import { SkillCard } from '../../components/SkillCard/SkillCard';
 import { skills } from '../../data/skills';
+import { DecorativeLines } from '../../components/DecorativeLines/DecorativeLines';
 
 export const Skills = () => {
   return (
-    <Box component="section" id="skills" sx={{ py: 8 }}>
+    <Box component="section" id="skills" sx={{ py: 8, position: 'relative' }}>
+      <DecorativeLines showDivider />
       <Container>
         <Typography
           variant="h1"

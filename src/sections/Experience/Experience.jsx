@@ -2,10 +2,12 @@ import { Box, Container, Typography } from '@mui/material';
 import { experience } from '../../data/experience';
 import { experienceStyles } from './experience.styles';
 import { TimelineItem } from '../../components/TimelineItem/TimelineItem';
+import { DecorativeLines } from '../../components/DecorativeLines/DecorativeLines';
 
 export const Experience = () => {
   return (
     <Box component="section" id="experience" sx={experienceStyles.section}>
+      <DecorativeLines showDivider />
       <Container>
         <Typography variant="h1" sx={experienceStyles.heading}>
           experience

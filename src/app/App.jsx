@@ -16,6 +16,7 @@ import { SkillsMobile } from '../sections/Skills/SkillsMobile';
 import { WorkMobile } from '../sections/Work/WorkMobile';
 import { ExperienceMobile } from '../sections/Experience/ExperienceMobile';
 import { ContactMobile } from '../sections/Contact/ContactMobile';
+import { DecorativeLines } from '../components/DecorativeLines/DecorativeLines';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +67,7 @@ function App() {
           ) : (
             // ДЕСКТОПНАЯ ВЕРСИЯ
             <>
+              <DecorativeLines />
               <Box sx={{ marginRight: '235px' }}>
                 <About />
                 <Skills />
