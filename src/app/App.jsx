@@ -14,13 +14,13 @@ import { AboutMobile } from '../sections/About/AboutMobile';
 import { useSpeechBubble } from '../hooks/useSpeechBubble';
 import { SkillsMobile } from '../sections/Skills/SkillsMobile';
 import { WorkMobile } from '../sections/Work/WorkMobile';
-
+import { ExperienceMobile } from '../sections/Experience/ExperienceMobile';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentSection, setCurrentSection] = useState('about');
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-   const currentMessage = useSpeechBubble(currentSection);
+  const currentMessage = useSpeechBubble(currentSection);
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
@@ -35,9 +35,11 @@ function App() {
       case 'about':
         return <AboutMobile />;
       case 'skills':
-        return <SkillsMobile />; 
+        return <SkillsMobile />;
       case 'work':
         return <WorkMobile />;
+      case 'experience':
+        return <ExperienceMobile />;
       default:
         return <AboutMobile />;
     }
@@ -49,9 +51,9 @@ function App() {
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
       <Fade in={!isLoading} timeout={800}>
         <Box>
-           {isMobile ? (
+          {isMobile ? (
             // МОБИЛЬНАЯ ВЕРСИЯ
-             <MobileLayout
+            <MobileLayout
               currentSection={currentSection}
               currentMessage={currentMessage}
               onNavigate={handleNavigate}
@@ -61,15 +63,15 @@ function App() {
           ) : (
             // ДЕСКТОПНАЯ ВЕРСИЯ
             <>
-          <Box sx={{ marginRight: '235px' }}>
-            <About />
-            <Skills />
-            <Work />
-            <Experience />
-            <Contact />
-          </Box>
-          <Navbar />
-          </>
+              <Box sx={{ marginRight: '235px' }}>
+                <About />
+                <Skills />
+                <Work />
+                <Experience />
+                <Contact />
+              </Box>
+              <Navbar />
+            </>
           )}
         </Box>
       </Fade>

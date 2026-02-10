@@ -9,8 +9,8 @@ export const skillCardMobileStyles = {
     backgroundColor: 'transparent',
     transition: 'all 0.3s ease',
     cursor: 'default',
-    height: '72px', 
-    width: '78px',  
+    height: '72px',
+    width: '78px',
     display: 'flex',
     flexDirection: 'column',
     boxShadow: 'none',
@@ -39,7 +39,7 @@ export const skillCardMobileStyles = {
       height: '100%',
       objectFit: 'cover',
       transition: 'all 0.3s ease',
-      opacity: 0.8, 
+      opacity: 0.8,
     },
 
     '&:hover svg': {
@@ -47,18 +47,17 @@ export const skillCardMobileStyles = {
     },
   },
 
-
   content: {
     position: 'relative',
     zIndex: 1,
-    padding: '6px !important', 
+    padding: '6px !important',
     display: 'flex',
     alignItems: 'flex-start',
     height: '100%',
   },
 
   text: {
-    fontSize: '14px', 
+    fontSize: '14px',
     fontWeight: 400,
     lineHeight: 1.2,
     color: 'text.primary',

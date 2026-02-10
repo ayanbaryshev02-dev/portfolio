@@ -3,8 +3,8 @@ export const workMobileStyles = {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    paddingX: 0, 
-    alignItems: 'center', 
+    paddingX: 0,
+    alignItems: 'center',
     marginTop: '110px',
   },
 
@@ -13,7 +13,7 @@ export const workMobileStyles = {
     fontWeight: 100,
     color: 'textLines',
     marginBottom: '16px',
-    alignSelf: 'flex-start', 
+    alignSelf: 'flex-start',
     paddingLeft: '32px',
 
     '@media (max-height: 700px)': {

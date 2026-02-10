@@ -4,14 +4,14 @@ export const aboutMobileStyles = {
     flexDirection: 'column',
     width: '100%',
     paddingX: '32px',
-    marginTop: '110px', 
+    marginTop: '110px',
   },
 
   header: {
-    fontSize: '24px', 
+    fontSize: '24px',
     fontWeight: 100,
     color: 'textLines',
-    marginBottom: '16px', 
+    marginBottom: '16px',
 
     '@media (max-height: 700px)': {
       fontSize: '30px',
@@ -31,7 +31,7 @@ export const aboutMobileStyles = {
     marginBottom: 2,
     color: 'text.primary',
 
-     '@media (max-height: 700px)': {
+    '@media (max-height: 700px)': {
       fontSize: '20px',
       marginBottom: 1.5,
     },

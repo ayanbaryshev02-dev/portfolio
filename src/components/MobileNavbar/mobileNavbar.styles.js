@@ -2,11 +2,10 @@ export const mobileNavbarStyles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px', 
+    gap: '8px',
     alignItems: 'flex-end',
-    marginTop: '20px',  
-    paddingTop: '10px', 
-    
+    marginTop: '20px',
+    paddingTop: '10px',
 
     '@media (max-height: 700px)': {
       gap: '6px',
@@ -34,13 +33,12 @@ export const mobileNavbarStyles = {
       fontSize: '13px',
     },
 
-
     '&:hover': {
       color: 'text.primary',
     },
   },
 
   activeLink: {
-    color: 'text.primary', 
+    color: 'text.primary',
   },
 };

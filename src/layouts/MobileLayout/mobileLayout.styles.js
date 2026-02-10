@@ -5,10 +5,9 @@ export const mobileLayoutStyles = {
     height: '100vh',
     overflow: 'hidden',
     backgroundColor: 'background.default',
-    marginTop: '32px', 
-    paddingTop: '32px', 
+    marginTop: '32px',
+    paddingTop: '32px',
   },
-
 
   topLeft: {
     position: 'fixed',
@@ -18,11 +17,11 @@ export const mobileLayoutStyles = {
     flexDirection: 'column',
     gap: 0.5,
     zIndex: 100,
-     justifyContent: 'flex-end', 
-  height: '80px',
+    justifyContent: 'flex-end',
+    height: '80px',
 
-   '@media (max-height: 700px)': {
-      top: 62, 
+    '@media (max-height: 700px)': {
+      top: 62,
       height: '60px',
     },
 
@@ -38,25 +37,24 @@ export const mobileLayoutStyles = {
       lineHeight: 'normal',
 
       '@media (max-height: 600px)': {
-        fontSize: '10px', 
+        fontSize: '10px',
       },
     },
   },
 
-
   topRight: {
     position: 'fixed',
     top: 62,
-    right: 32, 
+    right: 32,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
     gap: '6px',
     zIndex: 100,
-      justifyContent: 'flex-end', 
-  height: '80px', 
+    justifyContent: 'flex-end',
+    height: '80px',
 
-   '@media (max-height: 700px)': {
+    '@media (max-height: 700px)': {
       top: 62,
       height: '60px',
       gap: '4px',
@@ -75,7 +73,6 @@ export const mobileLayoutStyles = {
     lineHeight: 1,
   },
 
-
   content: {
     position: 'fixed',
     top: '180px',
@@ -89,7 +86,7 @@ export const mobileLayoutStyles = {
 
     '@media (max-height: 700px)': {
       padding: '0 0px',
-     top: 44,
+      top: 44,
     },
 
     '@media (max-height: 600px)': {
@@ -98,18 +95,17 @@ export const mobileLayoutStyles = {
     },
   },
 
-
   bottomLeft: {
     position: 'fixed',
-    bottom: '110px', 
-    left: 32, 
+    bottom: '110px',
+    left: 32,
     display: 'flex',
     flexDirection: 'column',
-    gap: '16px', 
+    gap: '16px',
     zIndex: 100,
 
-     '@media (max-height: 700px)': {
-      bottom: '60px', 
+    '@media (max-height: 700px)': {
+      bottom: '60px',
       gap: '12px',
     },
 
@@ -139,14 +135,13 @@ export const mobileLayoutStyles = {
     },
   },
 
-
   bottomRight: {
     position: 'fixed',
-    bottom: '110px', 
-    right: 32, 
+    bottom: '110px',
+    right: 32,
     zIndex: 100,
 
-     '@media (max-height: 700px)': {
+    '@media (max-height: 700px)': {
       bottom: '60px',
     },
 

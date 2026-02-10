@@ -11,11 +11,7 @@ export const SkillsMobile = () => {
       </Typography>
       <Grid container spacing={0} sx={skillsMobileStyles.grid}>
         {skills.map((skill) => (
-          <Grid 
-            item 
-            key={skill.id}
-            sx={skillsMobileStyles.gridItem}
-          >
+          <Grid item key={skill.id} sx={skillsMobileStyles.gridItem}>
             <SkillCardMobile name={skill.name} Icon={skill.Icon} />
           </Grid>
         ))}

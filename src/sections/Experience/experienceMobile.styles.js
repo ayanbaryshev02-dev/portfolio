@@ -1,4 +1,4 @@
-export const skillsMobileStyles = {
+export const experienceMobileStyles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -24,18 +24,10 @@ export const skillsMobileStyles = {
     },
   },
 
-  grid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 78px)',
-    columnGap: '8px',
-    rowGap: '16px',
-    justifyContent: 'flex-start',
-  },
-
-  gridItem: {
-    width: '78px',
-    height: '72px',
-    marginRight: '10px',
-    marginBottom: '32px',
+  timeline: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '5px',
+    position: 'relative',
   },
 };

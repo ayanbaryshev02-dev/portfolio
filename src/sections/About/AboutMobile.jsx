@@ -5,11 +5,9 @@ import { aboutMobileStyles } from './aboutMobile.styles';
 export const AboutMobile = () => {
   return (
     <Box sx={aboutMobileStyles.container}>
-
       <Typography variant="mobileHeader" sx={aboutMobileStyles.header}>
         about me
       </Typography>
-
 
       <Typography variant="body2" sx={aboutMobileStyles.mainText}>
         I'm a{' '}
@@ -18,7 +16,6 @@ export const AboutMobile = () => {
         </Box>{' '}
         focused on clean, responsive, and user-friendly interfaces.
       </Typography>
-
 
       <Typography variant="caption" sx={aboutMobileStyles.description}>
         My current stack includes{' '}
@@ -29,7 +26,8 @@ export const AboutMobile = () => {
         <Box component="span" sx={{ color: 'primary.main' }}>
           REST APIs
         </Box>{' '}
-        and continuously improve my skills by learning new tools and best practices.
+        and continuously improve my skills by learning new tools and best
+        practices.
       </Typography>
     </Box>
   );

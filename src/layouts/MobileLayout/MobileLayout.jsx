@@ -5,22 +5,20 @@ import { MobileNavbar } from '../../components/MobileNavbar/MobileNavbar';
 import { footerInfo } from '../../data/navigation';
 import { aboutMe } from '../../data/aboutMe';
 
-export const MobileLayout = ({ 
-  children, 
-  currentSection, 
+export const MobileLayout = ({
+  children,
+  currentSection,
   currentMessage,
-  onNavigate 
+  onNavigate,
 }) => {
   return (
     <Box sx={mobileLayoutStyles.container}>
-
       <Box sx={mobileLayoutStyles.topLeft}>
         <Typography variant="mobileInfo">{footerInfo.name}</Typography>
         <Typography variant="mobileInfo">{footerInfo.title[0]}</Typography>
         <Typography variant="mobileInfo">{footerInfo.title[1]}</Typography>
         <Typography variant="mobileInfo">{footerInfo.title[2]}</Typography>
       </Box>
-
 
       <Box sx={mobileLayoutStyles.topRight}>
         <SpeechBubble message={currentMessage} show={true} />
@@ -29,11 +27,7 @@ export const MobileLayout = ({
         </Typography>
       </Box>
 
-
-      <Box sx={mobileLayoutStyles.content}>
-        {children}
-      </Box>
-
+      <Box sx={mobileLayoutStyles.content}>{children}</Box>
 
       <Box sx={mobileLayoutStyles.bottomLeft}>
         {aboutMe.icons.map((social, index) => {
@@ -53,12 +47,8 @@ export const MobileLayout = ({
         })}
       </Box>
 
-
       <Box sx={mobileLayoutStyles.bottomRight}>
-        <MobileNavbar 
-          activeSection={currentSection} 
-          onNavigate={onNavigate}
-        />
+        <MobileNavbar activeSection={currentSection} onNavigate={onNavigate} />
       </Box>
     </Box>
   );

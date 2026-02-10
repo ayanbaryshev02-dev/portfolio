@@ -113,29 +113,29 @@ export const theme = createTheme({
       fontSize: '16px',
       fontWeight: 400,
     },
-    
+
     mobileHeader: {
       fontSize: '12px',
       fontWeight: 100,
       color: COLORS.textLines,
     },
-    
+
     mobileTitle: {
       fontSize: '14px',
       fontWeight: 400,
     },
-    
+
     mobileNav: {
       fontSize: '16px',
       fontWeight: 400,
     },
-    
+
     mobileInfo: {
       fontSize: '12px',
       fontWeight: 300,
     },
   },
-  
+
   components: {
     MuiContainer: {
       styleOverrides: {

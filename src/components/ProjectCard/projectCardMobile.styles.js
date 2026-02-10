@@ -2,7 +2,7 @@ export const projectCardMobileStyles = {
   card: {
     position: 'relative',
     height: '90px',
-    width: 'auto', 
+    width: 'auto',
     display: 'flex',
     left: 30,
     flexDirection: 'row',
@@ -22,7 +22,6 @@ export const projectCardMobileStyles = {
     },
   },
 
-
   titleSection: {
     width: 'auto',
     paddingTop: '15px',
@@ -39,11 +38,11 @@ export const projectCardMobileStyles = {
     fontWeight: 400,
     lineHeight: 1.2,
     color: 'text.primary',
-    whiteSpace: 'wrap', 
+    whiteSpace: 'wrap',
   },
 
   descriptionSection: {
-    flex: 1, 
+    flex: 1,
     paddingTop: '13px',
     paddingBottom: '13px',
     paddingRight: '13px',
@@ -62,12 +61,11 @@ export const projectCardMobileStyles = {
     WebkitBoxOrient: 'vertical',
   },
 
-
   buttonsSection: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px', 
-    paddingRight: '13px', 
+    gap: '8px',
+    paddingRight: '13px',
   },
 
   demoButton: {
