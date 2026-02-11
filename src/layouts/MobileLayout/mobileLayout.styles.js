@@ -38,11 +38,11 @@ export const mobileLayoutStyles = {
       lineHeight: 'normal',
     },
     '& .MuiTypography-root:first-of-type': {
-    marginBottom: '8px', 
-  },
-     '& .MuiTypography-root:nth-child(n+2)': {
-    lineHeight: 1.0, 
-  },
+      marginBottom: '8px',
+    },
+    '& .MuiTypography-root:nth-child(n+2)': {
+      lineHeight: 1.0,
+    },
   },
 
   topRight: {

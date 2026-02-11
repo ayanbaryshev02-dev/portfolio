@@ -1,82 +1,36 @@
 import { ThemeProvider } from '@emotion/react';
-import { CssBaseline, Box, Fade, useMediaQuery } from '@mui/material';
+import { CssBaseline, Box, Fade } from '@mui/material';
 import { theme } from './styles/theme';
-import { Skills } from '../sections/Skills/Skills';
-import { About } from '../sections/About/About';
-import { Experience } from '../sections/Experience/Experience';
-import { Navbar } from '../components/Navbar/Navbar';
-import { Work } from '../sections/Work/Work';
-import { Contact } from '../sections/Contact/Contact';
-import { LoadingScreen } from '../components/LoadingScreen/LoadingScreen';
-import { useState } from 'react';
-import { MobileLayout } from '../layouts/MobileLayout/MobileLayout';
-import { AboutMobile } from '../sections/About/AboutMobile';
-import { useSpeechBubble } from '../hooks/useSpeechBubble';
-import { SkillsMobile } from '../sections/Skills/SkillsMobile';
-import { WorkMobile } from '../sections/Work/WorkMobile';
-import { ExperienceMobile } from '../sections/Experience/ExperienceMobile';
-import { ContactMobile } from '../sections/Contact/ContactMobile';
-import { DecorativeLines } from '../components/DecorativeLines/DecorativeLines';
+import { useApp } from '../hooks';
+import { LoadingScreen } from '../components';
+import { DesktopApp, MobileApp } from './components';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [currentSection, setCurrentSection] = useState('about');
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-  const currentMessage = useSpeechBubble(currentSection);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
-  const handleNavigate = (sectionId) => {
-    setCurrentSection(sectionId);
-  };
-
-  const renderMobileSection = () => {
-    switch (currentSection) {
-      case 'about':
-        return <AboutMobile />;
-      case 'skills':
-        return <SkillsMobile />;
-      case 'work':
-        return <WorkMobile />;
-      case 'experience':
-        return <ExperienceMobile />;
-      case 'contact':
-        return <ContactMobile />;
-      default:
-        return <AboutMobile />;
-    }
-  };
+  const {
+    isLoading,
+    currentSection,
+    isMobile,
+    currentMessage,
+    handleLoadingComplete,
+    handleNavigate,
+  } = useApp();
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
+
       <Fade in={!isLoading} timeout={800}>
         <Box>
           {isMobile ? (
-            // МОБИЛЬНАЯ ВЕРСИЯ
-            <MobileLayout
+            <MobileApp
               currentSection={currentSection}
               currentMessage={currentMessage}
               onNavigate={handleNavigate}
-            >
-              {renderMobileSection()}
-            </MobileLayout>
+            />
           ) : (
-            // ДЕСКТОПНАЯ ВЕРСИЯ
-            <>
-              <DecorativeLines />
-              <Box sx={{ marginRight: '235px' }}>
-                <About />
-                <Skills />
-                <Work />
-                <Experience />
-                <Contact />
-              </Box>
-              <Navbar />
-            </>
+            <DesktopApp />
           )}
         </Box>
       </Fade>

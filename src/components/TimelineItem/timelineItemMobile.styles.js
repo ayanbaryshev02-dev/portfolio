@@ -56,7 +56,7 @@ export const timelineItemMobileStyles = {
     '@media (max-height: 840px)': {
       fontSize: '12px',
     },
-     '@media (max-height: 630px)': {
+    '@media (max-height: 630px)': {
       fontSize: '12px',
     },
   },

@@ -6,23 +6,17 @@ export const ProjectCardMobile = ({
   description,
   demoUrl,
   githubUrl,
-  // image убираем - не нужен
 }) => {
   return (
     <Card sx={projectCardMobileStyles.card}>
-      {/* Название слева */}
       <Box sx={projectCardMobileStyles.titleSection}>
         <Typography sx={projectCardMobileStyles.title}>{title}</Typography>
       </Box>
-
-      {/* Описание в центре */}
       <Box sx={projectCardMobileStyles.descriptionSection}>
         <Typography sx={projectCardMobileStyles.description}>
           {description}
         </Typography>
       </Box>
-
-      {/* Кнопки справа */}
       <Box sx={projectCardMobileStyles.buttonsSection}>
         <Button
           variant="contained"
