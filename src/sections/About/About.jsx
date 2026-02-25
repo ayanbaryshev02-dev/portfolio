@@ -31,7 +31,7 @@ export const About = () => {
                 component="span"
                 sx={{ color: 'primary.main', fontWeight: 400 }}
               >
-                React, Redux Toolkit, Tailwind CSS, and SCSS
+                React, TypeScript, Redux Toolkit, and Tailwind CSS
               </Box>
               . I actively work with{' '}
               <Box

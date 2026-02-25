@@ -4,20 +4,20 @@ export const experience = [
     year: '2025 - Present',
     title: 'Frontend Developer',
     description:
-      'Building modern web applications with React and related technologies. Working on personal projects and freelance opportunities to grow my development skills and portfolio.',
+      'Developing web interfaces with React and TypeScript. Working with REST APIs, component-based architecture, and responsive layouts. Focused on clean structure and production-ready solutions.',
   },
   {
     id: 2,
     year: '2024 - 2025',
-    title: 'Freelance Projects',
+    title: 'Freelance UX/UI Designer',
     description:
-      'Taking on small web development projects to apply learned skills in real-world scenarios. Focus on responsive design, clean code, and client communication.',
+      'Designed web interfaces in Figma, creating wireframes and high-fidelity layouts. Translated business requirements into structured, user-friendly designs ready for implementation.',
   },
   {
     id: 3,
     year: '2019 - 2024',
-    title: 'Media Specialist',
+    title: 'Editor-in-Chief / Media Lead',
     description:
-      'Developed strong visual design sense and user experience intuition through media production work. This background now informs my approach to frontend development, helping me create interfaces that are both functional and aesthetically pleasing.',
+      'Led a team of 8–10 people, coordinating planning, production, and quality control. Managed deadlines, delegated tasks, and maintained visual and editorial standards across projects.',
   },
 ];

@@ -12,7 +12,7 @@ export const aboutMe = {
   mainText:
     "I'm a frontend developer focused on clean, responsive, and user-friendly interfaces.",
   description:
-    'My current stack includes React, Redux Toolkit, Tailwind CSS, and SCSS. I actively work with REST APIs and continuously improve my skills by learning new tools and best practices.',
+    'My current stack includes React, TypeScript, Redux Toolkit, and Tailwind CSS. I work with REST APIs and continuously improve my skills by exploring new tools and development best practices.',
   icons: [
     { Icon: GmailIcon, link: 'mailto:ayanbaryshev02@gmail.com' },
     { Icon: GitHubIcon, link: 'https://github.com/ayanbaryshev02-dev' },

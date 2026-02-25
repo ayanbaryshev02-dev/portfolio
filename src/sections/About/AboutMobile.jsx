@@ -20,7 +20,7 @@ export const AboutMobile = () => {
       <Typography variant="caption" sx={aboutMobileStyles.description}>
         My current stack includes{' '}
         <Box component="span" sx={{ color: 'primary.main' }}>
-          React, Redux Toolkit, Tailwind CSS, and SCSS
+          React, TypeScript, Redux Toolkit, and Tailwind CSS
         </Box>
         . I actively work with{' '}
         <Box component="span" sx={{ color: 'primary.main' }}>
